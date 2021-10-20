@@ -49,7 +49,7 @@ public class GemPair {
 				gem = null;
 
 				// make the other fast speed
-				if (middle != null && !middle.isFastSpeed())
+				if (middle != null && middle.isFastSpeed())
 					middle.fastSpeed();
 			}
 		}
@@ -65,7 +65,7 @@ public class GemPair {
 				middle = null;
 
 				// make the other fast speed
-				if (gem != null && !gem.isFastSpeed())
+				if (gem != null && gem.isFastSpeed())
 					gem.fastSpeed();
 			}
 		}

@@ -35,7 +35,6 @@ public class GemGenerator {
 		else
 			type = Gem.DIAMOND;
 
-		Gem gem = new Gem(color, type);
-		return gem;
+		return new Gem(color, type);
 	}
 }

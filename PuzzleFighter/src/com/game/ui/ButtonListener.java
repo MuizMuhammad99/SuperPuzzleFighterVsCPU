@@ -6,5 +6,5 @@ package com.game.ui;
  */
 public interface ButtonListener {
 
-	public void buttonPressed();
+	void buttonPressed();
 }

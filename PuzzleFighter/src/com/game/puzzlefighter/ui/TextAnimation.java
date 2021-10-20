@@ -1,7 +1,5 @@
 package com.game.puzzlefighter.ui;
 
-import java.awt.Graphics2D;
-
 /**
  * An abstract text animation
  *
