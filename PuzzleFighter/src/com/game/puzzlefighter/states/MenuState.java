@@ -23,7 +23,6 @@ public class MenuState extends State {
 	private final Color backgroundColor = Color.PINK;
 
 	private final Font font = new Font("Monospaced", Font.BOLD, 20);
-	private final float blinkDelay = 0.5f;
 	private float delayCount;
 	private boolean blink = true;
 
@@ -54,6 +53,7 @@ public class MenuState extends State {
 
 		// update blink timer
 		delayCount += delta;
+		float blinkDelay = 0.5f;
 		if (delayCount >= blinkDelay) {
 			delayCount = 0;
 			blink = !blink;
@@ -73,7 +73,7 @@ public class MenuState extends State {
 		g2.setColor(backgroundColor);
 		g2.fillRect(0, 0, Game.getGameWidth(), Game.getGameHeight());
 
-		// titile
+		// title
 		g2.drawImage(titleAnimation.getCurrentFrame(), titleX, titleY, width, height, null);
 
 		if (blink)

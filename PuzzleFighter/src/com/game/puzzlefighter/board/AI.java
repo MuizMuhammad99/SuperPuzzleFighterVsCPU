@@ -209,7 +209,7 @@ public class AI {
 	}
 
 	/**
-	 * Finds the lowest row number of a gem placed in the board i.e the gem whoose
+	 * Finds the lowest row number of a gem placed in the board i.e the gem whose
 	 * position is higher than others.
 	 */
 	private void findLowestRow() {

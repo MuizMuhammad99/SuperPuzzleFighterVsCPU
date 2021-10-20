@@ -46,7 +46,6 @@ public class Board {
 	 * Constructor
 	 * 
 	 * @param observer board observer
-	 * @param gem generator random seed
 	 * @param x        x
 	 * @param y        y
 	 */

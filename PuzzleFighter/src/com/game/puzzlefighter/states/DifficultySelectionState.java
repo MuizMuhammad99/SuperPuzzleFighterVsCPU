@@ -26,7 +26,7 @@ public class DifficultySelectionState extends State {
 	public DifficultySelectionState(PuzzleFighter game) {
 		super(game);
 
-		// initialize butons
+		// initialize buttons
 		easyBtn = new UIButton("easy", "easyHover", 3);
 		normalBtn = new UIButton("normal", "normalHover", 3);
 		hardBtn = new UIButton("hard", "hardHover", 3);

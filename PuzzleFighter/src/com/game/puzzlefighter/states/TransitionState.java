@@ -8,7 +8,7 @@ import com.game.puzzlefighter.PuzzleFighter;
 
 /**
  * Transition state
- * it gives a visual transision between two states.
+ * it gives a visual transition between two states.
  */
 public class TransitionState extends State {
 	private State from;
@@ -21,10 +21,7 @@ public class TransitionState extends State {
 	private STATE state;
 
 	private float timer;
-	private final float TRANS_TIME = 0.8f;
 
-	private final float START_ALPHA = 0f;
-	private final float END_ALPHA = 1f;
 	private float alpha = 0f;
 
 	public TransitionState(PuzzleFighter game) {
@@ -36,6 +33,7 @@ public class TransitionState extends State {
 
 		//update
 		timer += delta;
+		float TRANS_TIME = 0.8f;
 		if (timer > TRANS_TIME) {
 			timer = 0f;
 			if (state == STATE.IN) {
@@ -47,6 +45,8 @@ public class TransitionState extends State {
 		}
 
 		//update from
+		float END_ALPHA = 1f;
+		float START_ALPHA = 0f;
 		if (state == STATE.IN) {
 			alpha = apply(START_ALPHA, END_ALPHA, timer / TRANS_TIME);
 			from.update(delta);

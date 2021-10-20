@@ -16,7 +16,6 @@ public class Animation {
 	private int index;
 	private final float frameDelay;
 	private float timer;
-	private final int step = 1;
 
 	private boolean restartAble = true;
 	private boolean reverseAble;
@@ -47,6 +46,7 @@ public class Animation {
 		//update frame timer
 		timer += delta;
 		if (timer >= frameDelay) {
+			int step = 1;
 			index += reverseMode ? -step : step;
 			timer = 0;
 		}

@@ -4,7 +4,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 /**
- * Handles Mouses input of game. 
+ * Handles Mouse's input of game.
  *
  */
 public class MouseManager extends MouseAdapter {

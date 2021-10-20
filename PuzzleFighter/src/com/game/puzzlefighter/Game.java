@@ -31,7 +31,6 @@ public abstract class Game implements Runnable {
 	private VolatileImage vImage;
 	protected Thread gameThread;
 	protected int fps;
-	private final boolean running = true;
 
 	public static final KeyManager keyManager = new KeyManager();
 	public static final MouseManager mouseManager = new MouseManager();
@@ -99,7 +98,7 @@ public abstract class Game implements Runnable {
 
 	/**
 	 * pre-renders the game i.e clears the screen so objects can be rendered on it.
-	 * It also creats and validates the vImage if it is invalid or null.
+	 * It also creates and validates the vImage if it is invalid or null.
 	 */
 	private void preRender() {
 		if (vImage == null) {
@@ -176,6 +175,7 @@ public abstract class Game implements Runnable {
 		int maxUpdates = 5;
 
 		// game loop
+		boolean running = true;
 		while (running) {
 			now = System.nanoTime();
 			timer += (now - lastTime);

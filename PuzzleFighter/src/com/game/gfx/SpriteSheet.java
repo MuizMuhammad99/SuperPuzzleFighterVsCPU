@@ -6,7 +6,7 @@ import com.game.utils.ImageLoader;
 
 /**
  * SpriteSheet Class
- * Modeles a sprite sheet from which individual sprites can be cropped.
+ * Models a sprite sheet from which individual sprites can be cropped.
  *
  */
 public class SpriteSheet {

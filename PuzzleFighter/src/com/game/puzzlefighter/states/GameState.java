@@ -54,7 +54,6 @@ public class GameState extends State implements BoardObserver {
 	private final KOAnimation koAnimation;
 
 	private boolean gameEnded;
-	private final float afterGameEndDelay = 2f;
 	private float delayTimer;
 	
 
@@ -138,6 +137,7 @@ public class GameState extends State implements BoardObserver {
 
 				if (winAnimation.isSlideDone() && loseAnimation.isSlideDone() && koAnimation.isFinished()) {
 					delayTimer += delta;
+					float afterGameEndDelay = 2f;
 					if (delayTimer >= afterGameEndDelay) {
 						game.transitionToMenu();
 						gameEnded = true;
