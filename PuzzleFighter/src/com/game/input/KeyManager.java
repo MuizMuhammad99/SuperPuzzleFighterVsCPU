@@ -39,15 +39,6 @@ public class KeyManager extends KeyAdapter {
 	/**
 	 * 
 	 * @param keyCode key code
-	 * @return true if the key is pressed
-	 */
-	public boolean isKeyPressed(int keyCode) {
-		return keys[keyCode];
-	}
-
-	/**
-	 * 
-	 * @param keyCode key code
 	 * @return true if the key is just pressed
 	 */
 	public boolean isKeyJustPressed(int keyCode) {

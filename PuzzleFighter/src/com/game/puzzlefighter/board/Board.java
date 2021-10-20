@@ -587,10 +587,6 @@ public class Board {
 
 	// getters
 
-	public int getState() {
-		return state;
-	}
-	
 	public boolean isInputState() {
 		return state == INPUT_STATE;
 	}
@@ -603,40 +599,20 @@ public class Board {
 		return rightKey;
 	}
 
-	public void setRightKey(int rightKey) {
-		this.rightKey = rightKey;
-	}
-
 	public int getLeftKey() {
 		return leftKey;
-	}
-
-	public void setLeftKey(int leftKey) {
-		this.leftKey = leftKey;
 	}
 
 	public int getRotateRightKey() {
 		return rotateRightKey;
 	}
 
-	public void setRotateRightKey(int rotateRightKey) {
-		this.rotateRightKey = rotateRightKey;
-	}
-
 	public int getRotateLeftKey() {
 		return rotateLeftKey;
 	}
 
-	public void setRotateLeftKey(int rotateLeftKey) {
-		this.rotateLeftKey = rotateLeftKey;
-	}
-
 	public int getFastPlaceKey() {
 		return fastPlaceKey;
-	}
-
-	public void setFastPlaceKey(int fastPlaceKey) {
-		this.fastPlaceKey = fastPlaceKey;
 	}
 
 	public void finished() {
@@ -649,10 +625,6 @@ public class Board {
 
 	public int getX() {
 		return x;
-	}
-
-	public int getY() {
-		return y;
 	}
 
 	public int getScore() {

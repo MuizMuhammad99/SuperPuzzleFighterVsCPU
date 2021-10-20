@@ -14,7 +14,7 @@ public class Animation {
 
 	private BufferedImage[] frames;
 	private int index;
-	private float frameDelay;
+	private final float frameDelay;
 	private float timer;
 	private final int step = 1;
 
@@ -92,15 +92,6 @@ public class Animation {
 		timer = 0;
 	}
 
-	public void setIndex(int i) {
-		index = i;
-
-	}
-	
-	public void setFrameDelay(float frameDelay) {
-		this.frameDelay = frameDelay;
-	}
-
 	public int getIndex() {
 		return index;
 	}
@@ -129,10 +120,6 @@ public class Animation {
 	public void setReverseAble(boolean reverseAble) {
 		this.reverseAble = reverseAble;
 		
-	}
-
-	public float getFrameDelaly() {
-		return frameDelay;
 	}
 
 	public void setFrames(String frameKey) {

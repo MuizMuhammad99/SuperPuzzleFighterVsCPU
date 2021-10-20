@@ -9,7 +9,7 @@ import java.awt.event.MouseEvent;
  */
 public class MouseManager extends MouseAdapter {
 
-	private boolean leftPress, rightPress;
+	private boolean leftPress;
 	private float x, y;
 	
 	//getters
@@ -18,11 +18,7 @@ public class MouseManager extends MouseAdapter {
 		return leftPress;
 	}
 
-	public boolean isRightPressed() {
-		return rightPress;
-	}
-
-	public float getX() {
+    public float getX() {
 		return x;
 	}
 
@@ -60,7 +56,7 @@ public class MouseManager extends MouseAdapter {
 		if (e.getButton() == MouseEvent.BUTTON1)
 			leftPress = true;
 		if (e.getButton() == MouseEvent.BUTTON3)
-			rightPress = true;
+			;
 
 	}
 
@@ -69,7 +65,7 @@ public class MouseManager extends MouseAdapter {
 		if (e.getButton() == MouseEvent.BUTTON1)
 			leftPress = false;
 		if (e.getButton() == MouseEvent.BUTTON3)
-			rightPress = false;
+			;
 
 	}
 

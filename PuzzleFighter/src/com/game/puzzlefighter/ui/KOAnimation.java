@@ -42,7 +42,6 @@ public class KOAnimation extends TextAnimation {
 		height = (int) (koAnimation.getCurrentFrame().getHeight() * scale);
 	}
 
-	@Override
 	public void update(float delta) {
 		if (isFinished || !isStarted)
 			return;
@@ -72,7 +71,6 @@ public class KOAnimation extends TextAnimation {
 		}
 	}
 
-	@Override
 	public void render(Graphics2D g2) {
 		if(isFinished || !isStarted)
 			return;

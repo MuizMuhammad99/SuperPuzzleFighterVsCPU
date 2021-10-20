@@ -12,8 +12,8 @@ import javax.swing.JFrame;
  */
 public class MainWindow {
 
-	private JFrame frame;
-	private Canvas canvas;
+	private final JFrame frame;
+	private final Canvas canvas;
 
 	/**
 	 * Constructor
@@ -59,15 +59,8 @@ public class MainWindow {
 		return frame;
 	}
 
-	public void setFrame(JFrame frame) {
-		this.frame = frame;
-	}
-
-	public Canvas getCanvas() {
+    public Canvas getCanvas() {
 		return canvas;
 	}
 
-	public void setCanvas(Canvas canvas) {
-		this.canvas = canvas;
-	}
 }
