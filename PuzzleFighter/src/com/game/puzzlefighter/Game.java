@@ -33,7 +33,7 @@ public abstract class Game implements Runnable {
 	protected Thread gameThread;
 	protected int fps;
 	private int framesThisSecond;
-	private boolean running = true;
+	private final boolean running = true;
 
 	public static final Font DEFAULT_FONT = new Font("Arial", Font.PLAIN, 12);
 	public static final KeyManager keyManager = new KeyManager();
@@ -198,7 +198,7 @@ public abstract class Game implements Runnable {
 			updates = 0;
 			while (now - lastUpdateTime >= tickPerTime) {
 				float delta = (now - lastUpdateTime) / 1000000000.0f;
-				keyManager.update(delta);
+				keyManager.update();
 				delta = delta <= 0.016f ? delta : 0.016f;
 				update(delta);
 				lastUpdateTime += tickPerTime;

@@ -7,8 +7,9 @@ import java.awt.event.KeyEvent;
  * KeyManager Class Manages all key events.
  */
 public class KeyManager extends KeyAdapter {
-	private boolean keys[];
-	private boolean keysJustPressed[], keysPressable[];
+	private final boolean[] keys;
+	private final boolean[] keysJustPressed;
+    private final boolean[] keysPressable;
 
 	/**
 	 * Constructor
@@ -20,7 +21,7 @@ public class KeyManager extends KeyAdapter {
 	}
 
 	// update just pressed keys
-	public void update(float delta) {
+	public void update() {
 		for (int i = 0; i < keys.length; i++) {
 			if (!keysPressable[i] && !keys[i]) {
 				keysPressable[i] = true;

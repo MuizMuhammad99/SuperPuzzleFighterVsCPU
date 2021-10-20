@@ -16,7 +16,7 @@ public class Animation {
 	private int index;
 	private float frameDelay;
 	private float timer;
-	private int step = 1;
+	private final int step = 1;
 
 	private boolean restartAble = true;
 	private boolean reverseAble;

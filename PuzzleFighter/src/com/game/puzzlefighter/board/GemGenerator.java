@@ -8,7 +8,7 @@ import java.util.Random;
  */
 public class GemGenerator {
 
-	private Random random;
+	private final Random random;
 
 	/**
 	 * Constructor

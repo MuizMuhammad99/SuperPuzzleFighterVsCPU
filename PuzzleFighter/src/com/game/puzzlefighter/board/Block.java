@@ -11,9 +11,11 @@ import com.game.animation.Animation;
  */
 public class Block {
 
-	private ArrayList<Gem> gems;
-	private int startRow, startCol;
-	private int endRow, endCol;
+	private final ArrayList<Gem> gems;
+	private final int startRow;
+    private final int startCol;
+	private final int endRow;
+    private final int endCol;
 
 	/**
 	 * Constructor

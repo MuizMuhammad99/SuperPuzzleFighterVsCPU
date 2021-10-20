@@ -13,10 +13,11 @@ public class GemPair {
 	private Gem nextGem, nextMiddle;
 	private int angle = 90;
 
-	private Board board;
-	private int spawnX, spawnY;
+	private final Board board;
+	private final int spawnX;
+    private final int spawnY;
 
-	private GemGenerator gemGenerator;
+	private final GemGenerator gemGenerator;
 	
 	/**
 	 * Constructor

@@ -10,7 +10,7 @@ public class SoundPlayer implements Runnable {
 
 	private AudioFile BGM;
 	private AudioFile soundEffect, soundEffect2;
-	private Thread thread;
+	private final Thread thread;
 
 	private boolean playingBackGround;
 	private boolean playingSoundEffect, playingSoundEffect2;

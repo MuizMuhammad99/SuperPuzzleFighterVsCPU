@@ -13,11 +13,11 @@ import com.game.puzzlefighter.Game;
  */
 public class UIButton {
 
-	private BufferedImage buttonImage;
+	private final BufferedImage buttonImage;
 	private BufferedImage hoverImage;
 	private BufferedImage image;
 	private int x, y;
-	private Rectangle bounds;
+	private final Rectangle bounds;
 
 	private ButtonListener buttonListener;
 

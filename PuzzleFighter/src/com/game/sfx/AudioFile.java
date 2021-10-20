@@ -15,9 +15,9 @@ import javax.sound.sampled.LineUnavailableException;
  */
 public class AudioFile {
 
-	private AudioInputStream stream;
+	private final AudioInputStream stream;
 	private Clip clip;
-	private DataLine.Info info;
+	private final DataLine.Info info;
 	
 	
 	/**

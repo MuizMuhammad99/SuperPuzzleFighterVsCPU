@@ -15,15 +15,16 @@ public class KOAnimation extends TextAnimation {
 	public static final int IN = 1;
 	public static final int OUT = 2;
 
-	private Animation koAnimation;
+	private final Animation koAnimation;
 	private int state = 1;
 	private boolean isStarted;
 	private boolean isFinished;
 
-	private float pause = 2;
+	private final float pause = 2;
 	private float pauseCounter;
 
-	private int width, height;
+	private final int width;
+	private final int height;
 
 	/**
 	 * Constructor

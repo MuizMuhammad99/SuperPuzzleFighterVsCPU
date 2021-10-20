@@ -27,7 +27,7 @@ public class AI {
 	public static final int ROTATE_LEFT = 3;
 	public static final int ROTATE_RIGHT = 4;
 
-	private Board board;
+	private final Board board;
 	private int state = IDLE;
 
 	private float waitTime = 3f;
@@ -37,7 +37,7 @@ public class AI {
 	private int targetCol;
 
 	private Robot robot;
-	private ArrayList<Integer> movesToMake;
+	private final ArrayList<Integer> movesToMake;
 	private float moveDelay = 0.4f;
 	private float moveTimer;
 	private int lastKeyPressed;

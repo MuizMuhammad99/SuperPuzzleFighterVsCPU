@@ -21,10 +21,10 @@ public class TransitionState extends State {
 	private STATE state;
 
 	private float timer;
-	private float TRANS_TIME = 0.8f;
+	private final float TRANS_TIME = 0.8f;
 
-	private float START_ALPHA = 0f;
-	private float END_ALPHA = 1f;
+	private final float START_ALPHA = 0f;
+	private final float END_ALPHA = 1f;
 	private float alpha = 0f;
 
 	public TransitionState(PuzzleFighter game) {

@@ -14,7 +14,9 @@ import com.game.ui.UIButton;
  */
 public class DifficultySelectionState extends State {
 
-	private UIButton easyBtn, normalBtn, hardBtn;
+	private final UIButton easyBtn;
+	private final UIButton normalBtn;
+	private final UIButton hardBtn;
 	private int levelSelected;
 
 	/**
